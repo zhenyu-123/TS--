@@ -1,9 +1,11 @@
 // 泛型 generic 泛指的类型
-
+//  T type
 function join<T, P>(first: T, second: P) {
   return `${first}${second}`;
 }
-
+function join2<T>(first: T, second: T) {
+  return `${first}${second}`;
+}
 function anotherJoin<T>(first: T, second: T): T {
   return first;
 }
@@ -16,3 +18,5 @@ function map<T>(params: Array<T>) {
 // join<number, string>(1, '1');
 // map<string>(['123']);
 join(1, '1');
+join2<string>('1','1')
+// Array<string> === string[]
