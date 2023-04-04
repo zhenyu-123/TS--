@@ -6,6 +6,5 @@ interface JqueryInstance {
   html: (html: string) => {};
 }
 
-declare function $(readyFunc: () => void): void;//传函数，返回空
-declare function $(selector: string): JqueryInstance;// 传字符串，返回对象
- 
+declare function $(readyFunc: () => void): void;
+declare function $(selector: string): JqueryInstance;
